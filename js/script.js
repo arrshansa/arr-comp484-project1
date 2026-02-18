@@ -34,6 +34,13 @@ function tick() {
   earthDisplay.textContent = convertToEarthTime(millerSeconds);
 }
 
+document.addEventListener("keydown", function (e) {
+  const key = e.key.toLowerCase();
+  if (key === "s") startBtn.click();
+  if (key === "p") pauseBtn.click();
+  if (key === "r") resetBtn.click();
+});
+
 startBtn.addEventListener("click", function () {
   if (!isRunning) {
     isRunning = true;

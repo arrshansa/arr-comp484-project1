@@ -8,13 +8,12 @@
     </head>
     <body>
         <header role="banner">
-            <nav role = "navigation" main="main-nav">
+            <nav role = "navigation" id="main-nav">
                 <div class="nav-container">
-                    <div class="logo">
-                        <a href="../index.html"><h1 class="site-title">Interstellar 101</h1></a>
+                    <div class="site-title">
+                        <a href="../index.html"><h1 class="site-name">Interstellar 101</h1></a>
                     </div>
                     <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="iconic-scenes.html">Iconic Scenes</a></li>
                         <li><a href="cast-crew.html">Cast & Crew</a></li>
                         <li><a href="wallpapers.html">Wallpaper</a></li>
@@ -24,13 +23,30 @@
         </header>
 
         <section class="scene" id ="cornfield-chase">
+            <div class="scene-title">
+                <h2>1. Cornfield Chase</h2>
+            </div>
             <div class="scene-image">
-                <img src="images/cornfield-chase.png" alt="Cooper and Murph chasing the drone through the cornfield">
+                <figure>
+                    <img src="images/cornfield-chase.png" alt="Cooper and Murph chasing the drone through the cornfield">
+                    <figcaption>Cooper and Murph chasing the drone through the cornfield</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cooper-tom-field.png" alt="Cooper and Tom while Cooper tries to take control over the drone as Tom is driving through the field">
+                    <figcaption>Cooper and Tom while Cooper tries to take control over the drone as Tom is driving through the field</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/coops-controlling-drone.png" alt="Cooper and Murph controlling the drone as Tom watches them.">
+                    <figcaption>Cooper and Murph controlling the drone as Tom watches them.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/drone.png" alt="After the drone is taken down.">
+                    <figcaption>After the drone is taken down.</figcaption>
+                </figure>
             </div>
             <div class="scene-text">
-                <h2>1. Cornfield Chase</h2>
                 <p>
-                    This scene is one of the most iconic scenes of Interstellar. If you asked any Interstellar fan, this scene would be one of the firs to come to their mind. Every single department from direction, photography, acting, and music were so good that it gives the audience goosebumps. The score in this scene is one of the most popular scores in the history of film music. 
+                    This scene is one of the most iconic scenes of Interstellar. If you asked any Interstellar fan, this scene would be one of the firs to come to their mind. Every single department from direction, photography, acting, and music were so good that it gives the audience goosebumps. The score in this scene is one of the most popular scores in the history of film music.
                 </p>
             </div>
             <div class="scene-fun-fact">
@@ -41,94 +57,171 @@
         </section>
         
         <section class="scene" id ="wormhole">
+            <div class="scene-title">
+                <h2>2. The Wormhole</h2>
+            </div>
             <div class="scene-image">
-                <img src="" alt="">
+                <figure>
+                    <img src="images/wormhole-1.png" alt="">
+                    <figcaption>Cooper and the team approaching the wormhole</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/entering-wormhole.png" alt="Entering the wormhole">
+                    <figcaption>Entering the wormhole</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/going-through-wormhole.png" alt="">
+                    <figcaption>Going through the wormhole</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/new-galaxy.png" alt="">
+                    <figcaption>Cooper and the team reaching the new galaxy after going through the wormhole</figcaption>
+                </figure>
             </div>
             <div class="scene-text">
-                <h2>2. The Wormhole</h2>
+                
                 <p>
-
+                    The wormhole is one of the main plot devices in the movie as it enables actual Interstellar. Quick physics lesson: no object can travel in the same or even close to the speed of light as that is against the law of physics. And the universe is so vast that we can't travel through it without passing through generations of humans. The wormhole helps the characters cut down on the travel time. But the weird part is that these types of wormholes don't form on their own, so the characters suspect that some higher level being intentionally put it there for humans to use. The team travels through the wormhole and reach the other universe where past members were sent. This iconic scene is one of the most visually stunning scenes of the movie. 
                 </p>
             </div>
             <div class="scene-fun-fact">
                 <p>
-                    
+                    Fun Fact: The wormhole was designed with the help of physicist Kip Thorne, who served as a scientific consultant for the movie. Thorne's work on wormholes and black holes helped to shape the scientific accuracy of the movie and the depiction of the wormhole. The visual effects team used Thorne's equations to create a scientifically accurate representation of the wormhole, which was praised by both scientists and audiences alike for its realism and beauty.
                 </p>
             </div>
         </section>
 
-        <section class="scene" id ="millers">
-            <div class="scene-image">
-                <img src="" alt="">
-            </div>
-            <div class="scene-text">
-                <h2>3. Miller's Planet</h2>
+        <div class="clock-container">
+            <h3>Time Dilation Clock</h3>
+            <p class="clock-desc">1 second on Miller's Planet = 17 hours on Earth</p>
+            <p class="clock-desc">1 hour on Miller's Planet = 7 years on Earth</p>
+            <p class="clock-desc">
+                Keyboard shortcuts:
+                <kbd>S</kbd> Start · <kbd>P</kbd> Pause · <kbd>R</kbd> Reset
+            </p>
 
-                <div class="clock-container">
-                    <h3>Time Dilation Clock</h3>
-                    <p class="clock-desc">1 second on Miller's Planet = 17 hours on Earth</p>
-                    <p class="clock-desc">1 hour on Miller's Planet = 7 years on Earth</p>
-        
-                    <div class="clock-display">
-                        <div class="clock-col">
-                            <span class="clock-label">Miller's Planet</span>
-                            <span class="clock-time" id="millerTime">00:00:00</span>
-                        </div>
-                        <div class="clock-divider">→</div>
-                        <div class="clock-col">
-                            <span class="clock-label">Earth</span>
-                            <span class="clock-time" id="earthTime">0y 0d 0h</span>
-                        </div>
-                    </div>
-        
-                    <div class="clock-buttons">
-                        <button id="startBtn">Start</button>
-                        <button id="pauseBtn">Pause</button>
-                        <button id="resetBtn">Reset</button>
-                    </div>
+            <div class="clock-display">
+                <div class="clock-col">
+                    <span class="clock-label">Miller's Planet</span>
+                    <span class="clock-time" id="millerTime">00:00:00</span>
                 </div>
+                <div class="clock-divider">→</div>
+                <div class="clock-col">
+                    <span class="clock-label">Earth</span>
+                    <span class="clock-time" id="earthTime">0y 0d 0h</span>
+                </div>
+            </div>
 
+            <div class="clock-buttons">
+                <button id="startBtn">Start</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+
+        <section class="scene" id ="millers">
+            <div class="scene-title">
+                <h2>3. Miller's Planet</h2>
+            </div>
+            <div class="scene-image">
+                <figure>
+                    <img src="images/Miller's-Landing.png" alt="Landing of the Ranger on Miller's Planet">
+                    <figcaption>Landing of the Ranger on Miller's Planet</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/millers2.png" alt="Cooper and the team on Miller's Planet">
+                    <figcaption>Cooper and the team on Miller's Planet</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/the-wave.png" alt="The giant wave on Miller's Planet">
+                    <figcaption>The giant wave on Miller's Planet</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/coop-at-millers.png" alt="">
+                    <figcaption>Cooper on Miller's Planet inside the Ranger</figcaption>
+                </figure>
+            </div>
+            
+            <div class="scene-text">
                 <p>
-                    
+                    Miller's planet is my most favorite scene from the movie. The visuals seem calm and serene but the disaster waiting for the team is so intense that it kept me on the edge of my seat. And this is the same no matter how many times I watch this movie. Miller's planet is closesly situated to the Supermassive Black Hole Gargantua causing a really huge warp in time and space. The time dilation of a black hole can be its own topic but in this movie it is used to create a emotional context to the movie where Cooper wants to waste no time and go back to his daughter. The more time they spend on the planet, the more time they miss to spend with their loved ones which is consistent with one of the prominent themes of the movie. The planet is filled with shallow water, which allows for the team to traverse the surface despite having knee deep water. But the dangerous thing in the planet is the so called hills that are visible from far away. But only after sometime they realize that it is 
                 </p>
             </div>
             <div class="scene-fun-fact">
                 <p>
-
+                    Fun Fact: This scene was further enhanced by the musical genius Hans Zimmer. There is a clock ticking sound that is played as soon as the ranger lands and Cooper rushes the team to leave the ranger and collect the data from Dr. Miller's visit. The clock is played every 1.25 second and it is meant to represent the time dialation where each tick of the clock equals to 1 whole day passing back on Earth.
                 </p>
             </div>
+
         </section>
 
         <section class="scene" id ="tesseract">
+            <div class="scene-title">
+                <h2>4. Entering the Tesseract through Gargantua </h2>
+            </div>
             <div class="scene-image">
-                <img src="" alt="">
+                <figure>
+                    <img src="images/Gargantua.png" alt="Gargantua, the supermassive black hole">
+                    <figcaption>Gargantua, the supermassive black hole</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cooper-falling-into-gargantua.png" alt="Cooper falling into Gargantua">
+                    <figcaption>Cooper falling into Gargantua</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dont-let-me-leave.png" alt="">
+                    <figcaption>Cooper yelling a iconic line: "Don't let me leave Murph!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/tesseract.png" alt="Cooper inside the tesseract, a 5 dimensional space where he can see all the different moments in time of his daughter Murph's bedroom">
+                    <figcaption>Cooper inside the tesseract, a 5 dimensional space where he can see all the different moments in time of his daughter Murph's bedroom</figcaption>
+                </figure>
             </div>
             <div class="scene-text">
-                <h2>4. Entering the Tesseract through Gargantua </h2>
+                
                 <p>
-
+                    This is the most mind bending and visually stunning scene of the movie. Cooper enters the supermassive black hole Gargantua and falls into the tesseract, a 5 dimensional space where he can see all the different moments in time of his daughter Murph's bedroom. The tesseract is a construct created by the higher level beings who created the wormhole for humans to use. The tesseract allows Cooper to interact with the different moments in time and send messages to Murph through the watch that he gave her before leaving Earth. This scene is so emotional and powerful that it gives me goosebumps every single time I watch it. The way Nolan uses the visuals and music to create a sense of wonder and awe is truly masterful.
                 </p>
             </div>
             <div class="scene-fun-fact">
                 <p>
-
+                    Fun Fact: The tesseract is a theoretical construct in physics that represents a four-dimensional hypercube. In the movie, it is depicted as a three-dimensional space where Cooper can see all the different moments in time of his daughter's bedroom. The concept of the tesseract was inspired by the work of physicist Kip Thorne, who served as a scientific consultant for the movie. Thorne's work on wormholes and black holes helped to shape the scientific accuracy of the movie and the depiction of the tesseract.
                 </p>
             </div>
         </section>
 
         <section class="scene" id ="cooper-station">
+            <div class="scene-title">
+                <h2>5. Cooper Station</h2>
+            </div> 
             <div class="scene-image">
-                <img src="" alt="">
+                <figure>
+                    <img src="images/cooper-station.png" alt="Cooper Station, the space station built in orbit around Saturn after the events of the movie">
+                    <figcaption>Cooper Station, the space station built in orbit around Saturn after the events of the movie</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/coop-murph-meet.png" alt="Cooper and Murph meeting on Cooper Station">
+                    <figcaption>Cooper and Murph meeting on Cooper Station</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/new-home.png" alt="Brand looking at the new home of humanity">
+                    <figcaption>Brand looking at the new home of humanity</figcaption> 
+                </figure>
+                <figure>
+                    <img src="images/new-planet-2.png" alt="The new colony setup on Edmunds Planet">
+                    <figcaption>The new colony setup on Edmunds Planet</figcaption>
+                </figure>
+                
             </div>
             <div class="scene-text">
-                <h2>5. Cooper Station</h2>
+                
                 <p>
-
+                    Cooper Station is the space station that is built in orbit around Saturn after the events of the movie. It is named after Murphy Cooper, Cooper's daughter, who was instrumental in solving the equation that allowed for the construction of the station. The station is a cylindrical structure that rotates to create artificial gravity and it is designed to be self-sustaining with its own ecosystem. The station is a symbol of hope and resilience for humanity as it represents the ability to adapt and survive in the face of adversity. The scene where Cooper reunites with his daughter on the station is one of the most emotional and heartwarming scenes of the movie.
                 </p>
             </div>
             <div class="scene-fun-fact">
                 <p>
-
+                    Fun Fact: The design of Cooper Station was inspired by the concept of a Stanford Torus, which is a proposed design for a space habitat that would rotate to create artificial gravity. The station's design was also influenced by the work of architect and futurist Buckminster Fuller, who envisioned a geodesic dome structure that could be used for space habitats. The station's interior was designed to be visually stunning and futuristic, with large windows that offer breathtaking views of space and the surrounding environment.
                 </p>
             </div>
         </section>
@@ -156,7 +249,6 @@
                 <p>&copy; 2026 Interstellar 101. Educational fan project. All film content &copy; Warner Bros. & Paramount Pictures.</p>
             </div>
         </footer>
-
         <script src="/js/script.js"></script>
     </body>
 </html>

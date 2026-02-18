@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 1);
     border-bottom: 1px solid var(--ice-blue);
     padding: 1rem 0;
     position: sticky;
@@ -41,8 +41,8 @@ header {
 
 .nav-links {
     display: flex;
-    list-style: none;
-    gap: 20px;
+    list-style: none; /* Removes the bullet points */
+    gap: 25px;
 }
 
 .nav-links a {
@@ -53,7 +53,7 @@ header {
     text-transform: uppercase;
 }
 
-.logo a {
+.site-title a {
     text-decoration: none;
     color: var(--star-white);
     font-family: var(--font-title);
@@ -61,7 +61,7 @@ header {
     text-transform: uppercase;
 }
 
-/* Hero Section */
+/* Hero Section (The movie title and tagline) */
 .hero-section {
     height: 80vh;
     display: flex;
@@ -69,9 +69,9 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/coop-murph.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/cooper-murph-sky.jpeg');
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 45%;
 }
 
 .hero-title {
@@ -107,7 +107,7 @@ header {
 
 .stat-card {
     text-align: center;
-    border: 1px solid #333;
+    border: 2px solid #333;
     padding: 20px;
     min-width: 200px;
     flex: 1;
@@ -124,6 +124,20 @@ header {
     font-size: 0.8rem;
     text-transform: uppercase;
     color: #888;
+}
+
+/* Wh is this my Favorite Section */
+.favorite-section {
+    padding: 100px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.favorite-content {
+    font-size: 1.2rem;
+    color: var(--ice-blue);
+    line-height: 1.8;
 }
 
 /* Quote Section */
@@ -145,7 +159,7 @@ header {
     font-family: var(--font-display);
 }
 
-/* Themes Section */
+/* Movie's Themes Section */
 .themes-section {
     padding: 80px 20px;
     max-width: 1100px;
@@ -173,7 +187,7 @@ header {
 
 .theme-card h3 {
     margin-bottom: 10px;
-    color: var(--gold-accent);
+    color: var(--star-white);
 }
 
 /* Footer */
@@ -215,7 +229,7 @@ header {
     color: #555;
 }
 
-/* --- Section Labels & Headings --- */
+/* Section Labels & Headings */
 .section-label {
     font-family: 'Courier New', monospace;
     font-size: 0.9rem;
@@ -237,7 +251,6 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .page-header {
     text-align: center;
@@ -262,30 +275,49 @@ header {
 
 .scene {
     display: flex;
-    gap: 50px;
-    align-items: flex-start;
-    padding: 60px 20px;
+    flex-direction: column;
+    gap: 20px;                /* controls space between title, images, text */
+    padding: 40px 20px;
     max-width: 1100px;
     margin: 0 auto;
     border-bottom: 1px solid #222222;
 }
 
-
-.scene-reverse {
-    flex-direction: row-reverse;
+.scene-title h2 {
+    margin-bottom: 10px;
 }
 
+/* Image Grid */
+.scene-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
 
+/* Image Card */
+.scene-image figure {
+    background-color: #111111;
+    border: 1px solid #333333;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Image */
 .scene-image img {
-    width: 420px;
+    width: 100%;
     height: 280px;
     object-fit: cover;
     display: block;
 }
 
-
-.scene-text {
-    flex: 1;
+/* Caption */
+.scene-image figcaption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--ice-blue);
+    margin-top: 8px;
 }
 
 .scene-number {
@@ -297,11 +329,12 @@ header {
     margin-bottom: 8px;
 }
 
-.scene-text h2 {
+.scene-title h2 {
     font-family: 'Georgia', serif;
+    text-align: center;
     font-size: 2rem;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .scene-text p {
@@ -324,82 +357,84 @@ header {
 }
 
 .clock-container {
-    background-color: #111111;
-    border: 1px solid #333333;
-    padding: 25px;
-    margin: 25px 0;
+    background-color: #1a1a1a;
+    border: 2px solid #333333;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: center;
 }
 
 .clock-container h3 {
     font-family: 'Georgia', serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ffffff;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .clock-desc {
     font-family: 'Courier New', monospace;
-    font-size: 0.8rem;
-    color: #555555;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #888888;
+    margin-bottom: 10px;
 }
 
 .clock-display {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 30px;
+    margin: 30px 0;
 }
 
 .clock-col {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    text-align: center;
 }
 
 .clock-label {
     font-family: 'Courier New', monospace;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #555555;
+    color: #888888;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .clock-time {
     font-family: 'Courier New', monospace;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: #ffffff;
+    display: block;
 }
 
 .clock-divider {
-    font-size: 1.5rem;
-    color: #444444;
-    padding: 0 5px;
-    margin-top: 20px;
+    font-size: 2rem;
+    color: #666666;
 }
 
 .clock-buttons {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
 }
 
 .clock-buttons button {
     background-color: #000000;
-    color: #888888;
-    border: 1px solid #333333;
-    padding: 8px 20px;
+    color: #ffffff;
+    border: 2px solid #555555;
+    padding: 10px 25px;
     font-family: 'Courier New', monospace;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
 }
 
 .clock-buttons button:hover {
-    color: #ffffff;
     border-color: #ffffff;
+    background-color: #222222;
 }
 
 .director-section {
@@ -443,9 +478,8 @@ header {
     margin-bottom: 15px;
 }
 
-
 .cast-section {
-    padding: 60px 20px;
+    padding: 30px 20px;
     max-width: 1100px;
     margin: 0 auto;
     border-top: 1px solid #222222;
@@ -455,8 +489,8 @@ header {
     display: flex;
     gap: 40px;
     align-items: flex-start;
-    margin-bottom: 60px;
-    padding-bottom: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #222222;
 }
 
@@ -496,7 +530,53 @@ header {
     line-height: 1.8;
 }
 
-/* Page Header */
+.crew-section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.crew-member {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #222222;
+}
+
+.crew-member-reverse {
+    flex-direction: row-reverse;
+}
+
+.crew-photo img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.crew-info {
+    flex: 1;
+}
+
+.crew-name {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.crew-job {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+/* Wallpaper Page Header */
 .page-header {
     text-align: center;
     padding: 50px 20px 30px;
@@ -527,7 +607,6 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .wallpaper-card {
     background-color: #111111;
